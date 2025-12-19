@@ -1,11 +1,116 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <title>Our Profile | Syaikhu Consulting</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    
+
+  <!-- NAVBAR -->
+  <nav class="navbar">
+  <div class="brand">
+    <img src="C:\Users\Lenovo\OneDrive\Documents\GitHub\CodingCamp-15Dec25-Syaikhufp\images\logo.png" alt="Logo Syaikhu Consulting">
+    <span>Syaikhu Consulting</span>
+  </div>
+
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="profile.html">Our Profile</a></li>
+    <li><a href="#expertise">Expertise</a></li>
+    <li><a href="#message">Message Us</a></li>
+  </ul>
+</nav>
+
+  <!-- HERO WITH PHOTO BANNER -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Hi <span id="userName">Client</span>,</h1>
+      <h2>Your Trusted Web Design Consultant</h2>
+      <p>
+        Kami membantu bisnis membangun website modern, responsif,
+        dan berorientasi pada pengalaman pengguna.
+      </p>
+    </div>
+  </section>
+
+  <!-- EXPERTISE -->
+  <section class="expertise" id="expertise">
+    <h2>Our Expertise</h2>
+    <div class="expertise-list">
+      <div class="expertise-card">
+        <h3>Web Design</h3>
+        <p>Desain profesional yang mencerminkan identitas bisnis Anda.</p>
+      </div>
+      <div class="expertise-card">
+        <h3>UI / UX Consulting</h3>
+        <p>Meningkatkan kenyamanan dan kepuasan pengguna.</p>
+      </div>
+      <div class="expertise-card">
+        <h3>Web Development</h3>
+        <p>Website cepat, responsif, dan siap untuk kebutuhan bisnis.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- HEADQUARTER -->
+   <section class="hq">
+    <h2>Our Headquarter</h2>
+    <div class="hq-list">
+      <div class="hq-card">
+        <img src="C:\Users\Lenovo\OneDrive\Documents\GitHub\CodingCamp-15Dec25-Syaikhufp\images\jakarta.jpeg" alt="Jakarta">
+        <h3>Jakarta</h3>
+      </div>
+      <div class="hq-card">
+        <img src="C:\Users\Lenovo\OneDrive\Documents\GitHub\CodingCamp-15Dec25-Syaikhufp\images\bandung.jpeg" alt="Bandung">
+        <h3>Bandung</h3>
+      </div>
+      <div class="hq-card">
+        <img src="C:\Users\Lenovo\OneDrive\Documents\GitHub\CodingCamp-15Dec25-Syaikhufp\images\surabaya.jpeg" alt="Surabaya">
+        <h3>Surabaya</h3>
+      </div>
+    </div>
+  </section>
+
+  <!-- MESSAGE US -->
+  <section class="message" id="message">
+    <h2>Message Us</h2>
+
+    <div class="message-container">
+      <form id="messageForm">
+        <label>Nama</label>
+        <input type="text" id="name" required>
+
+        <label>Tanggal Lahir</label>
+        <input type="date" id="birth" required>
+
+        <label>Jenis Kelamin</label>
+        <div class="radio-group">
+          <label><input type="radio" name="gender" value="Laki-Laki" required> Laki-Laki</label>
+          <label><input type="radio" name="gender" value="Perempuan"> Perempuan</label>
+        </div>
+
+        <label>Pesan</label>
+        <textarea id="messageText" required></textarea>
+
+        <button type="submit">Submit</button>
+      </form>
+
+      <!-- OUTPUT FRAME -->
+      <div class="result-frame">
+        <h3>Message Preview</h3>
+        <div id="resultContent">
+          <p>Data pesan akan tampil di sini</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    © 2025 Syaikhu Consulting | Web Design Consultant
+  </footer>
+
+  <script src="js/script.js"></script>
 </body>
 </html>
