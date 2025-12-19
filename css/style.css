@@ -33,6 +33,9 @@ body {
   display: flex;
   list-style: none;
   gap: 20px;
+
+  margin: 0;
+  padding: 0;
   margin-left: auto;
 }
 
